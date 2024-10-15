@@ -113,7 +113,7 @@ public class ProductsPage {
 			newList.add(Double.valueOf(item.replaceAll("[$]","").trim()));
 		}
 		return newList;
-		}
+	}
 	
 
 }

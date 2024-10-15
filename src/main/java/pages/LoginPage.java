@@ -13,10 +13,10 @@ import test.data.Users;
 
 public class LoginPage  {
 	
-    WebDriver driver;
+	WebDriver driver;
 
 	public LoginPage(WebDriver driver) {
-    this.driver=driver;
+		this.driver=driver;
 	}
 
 	//Locators
@@ -48,7 +48,7 @@ public class LoginPage  {
     	return driver.findElement(errorContainer).getText();
     }
     
-    public List<WebElement> placeElementsInList(By name) { ///////de facut utilitara?????????????????????????????????????/??!!1
+    public List<WebElement> placeElementsInList(By name) { 
     	List<WebElement> listElements=driver.findElements(name);
     	return listElements;
     }
@@ -78,6 +78,7 @@ public class LoginPage  {
     
     public boolean isValueAttributeEmpty() {
     return driver.findElement(valueEmptyNoPassword).getAttribute("value").isEmpty();
+
     }
     
     public boolean isValueAttributeEmptyUsername() {
@@ -93,7 +94,6 @@ public class LoginPage  {
         builder.perform();
     }
    
-    
     public void clearUsername() {
     	driver.findElement(usernameInput).sendKeys(Keys.CONTROL,"a",Keys.DELETE);
     }
