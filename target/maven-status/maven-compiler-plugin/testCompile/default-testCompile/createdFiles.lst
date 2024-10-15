@@ -1,0 +1,5 @@
+TestClasses\PlaceOrderAndBuyTest.class
+TestClasses\BaseTest.class
+TestClasses\LoginTest.class
+TestClasses\LogoutTest.class
+TestClasses\ProductsTest.class
